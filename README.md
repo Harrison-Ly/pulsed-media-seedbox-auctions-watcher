@@ -14,3 +14,9 @@ pip install -r requirements.txt
 ## Configuration
 1. change `PRICE_TARGET` in `pulsedmedia_watch.py`
 2. add your pushover keys in `config.py`
+
+## Crontab
+Run the script every minute  
+```
+* * * * * python <path_to>/pulsedmedia_watch.py >> /var/log/pulsedmedia_watch.log 2>&1
+```
